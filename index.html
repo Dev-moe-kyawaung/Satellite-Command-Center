@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moe Kyaw | Satellite Command Center</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Moe Kyaw | Command Center</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="panel">
+      <div class="grid-2">
+        <div>
+          <h1 style="font-size: 48px; color: var(--accent-cyan); margin-bottom: 20px;">
+            SENIOR ANDROID DEVELOPER
+          </h1>
+          <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 30px;">
+            Building next-generation mobile experiences and satellite-grade software systems from London, England.
+          </p>
+          <div style="display: flex; gap: 15px;">
+            <a href="projects.html" class="btn btn-primary">View Mission Logs</a>
+            <a href="contact.html" class="btn">Establish Contact</a>
+          </div>
+        </div>
+        <div id="radar-container" class="radar-container">
+          <div class="radar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telemetry Section -->
+    <section class="grid-4">
+      <div class="panel">
+        <div class="panel-title">CPU Usage</div>
+        <div class="telemetry-value" id="telemetry-cpu" data-base-value="45">45.0%</div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Memory</div>
+        <div class="telemetry-value" id="telemetry-memory" data-base-value="62">62.0%</div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Network</div>
+        <div class="telemetry-value" id="telemetry-network" data-base-value="128">128 MB/s</div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Uptime</div>
+        <div class="telemetry-value">99.9%</div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section-header">
+      <h2 class="section-title">Active Missions</h2>
+      <p class="section-subtitle">Current deployment operations and project status</p>
+    </section>
+
+    <section class="grid-3">
+      <div class="project-card">
+        <div class="project-icon">📱</div>
+        <h3 class="project-title">Android Enterprise App</h3>
+        <p class="project-description">
+          Enterprise-grade Android application with offline-first architecture, real-time sync, and advanced security protocols.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Kotlin</span>
+          <span class="tech-tag">Jetpack Compose</span>
+          <span class="tech-tag">Hilt</span>
+        </div>
+        <a href="projects.html" class="btn">Access Mission Data</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🚀</div>
+        <h3 class="project-title">Satellite Tracking System</h3>
+        <p class="project-description">
+          Real-time satellite tracking dashboard with orbital mechanics visualization and telemetry data streaming.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">D3.js</span>
+          <span class="tech-tag">WebSocket</span>
+        </div>
+        <a href="projects.html" class="btn">Access Mission Data</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌐</div>
+        <h3 class="project-title">Portfolio Command Center</h3>
+        <p class="project-description">
+          Interactive portfolio website with space-themed UI, radar animations, and mission control interface design.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="projects.html" class="btn">Access Mission Data</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/telemetry.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    // Initialize radar
+    new RadarSystem('radar-container');
+    
+    // Set current date
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
