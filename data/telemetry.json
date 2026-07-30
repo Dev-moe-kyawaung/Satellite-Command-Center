@@ -1,0 +1,15 @@
+{
+  "system": {
+    "cpu": 45,
+    "memory": 62,
+    "network": 128,
+    "storage": 78,
+    "uptime": 99.9
+  },
+  "metrics": {
+    "projects": 50,
+    "deployments": 156,
+    "commits": 2340,
+    "contributions": 890
+  }
+}
