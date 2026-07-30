@@ -1,0 +1,58 @@
+/* ============================================
+   SATELLITE COMMAND CENTER - RADAR SYSTEM
+   ============================================ */
+
+class RadarSystem {
+  constructor(containerId) {
+    this.container = document.getElementById(containerId);
+    if (this.container) {
+      this.init();
+    }
+  }
+
+  init() {
+    this.createRadarGrid();
+    this.startBlips();
+  }
+
+  createRadarGrid() {
+    const radar = this.container.querySelector('.radar');
+    if (!radar) return;
+
+    const grid = document.createElement('div');
+    grid.className = 'radar-grid';
+
+    for (let i = 1; i <= 4; i++) {
+      const ring = document.createElement('div');
+      ring.className = 'radar-ring';
+      grid.appendChild(ring);
+    }
+
+    radar.appendChild(grid);
+  }
+
+  startBlips() {
+    const radar = this.container.querySelector('.radar');
+    if (!radar) return;
+
+    setInterval(() => {
+      const blip = document.createElement('div');
+      blip.className = 'radar-blip';
+      
+      const angle = Math.random() * 360;
+      const distance = 20 + Math.random() * 60;
+      
+      const x = 50 + distance * Math.cos(angle * Math.PI / 180);
+      const y = 50 + distance * Math.sin(angle * Math.PI / 180);
+      
+      blip.style.left = x + '%';
+      blip.style.top = y + '%';
+      
+      radar.appendChild(blip);
+
+      setTimeout(() => {
+        blip.remove();
+      }, 2000);
+    }, 1500);
+  }
+}
