@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance | Optimization Metrics</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Optimization Metrics</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Optimization Metrics</h2>
+      <p class="section-subtitle">Performance benchmarks and optimization achievements</p>
+    </section>
+
+    <div class="grid-4">
+      <div class="stats-card">
+        <div class="stats-value">95+</div>
+        <div class="stats-label">Lighthouse Score</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">&lt;100ms</div>
+        <div class="stats-label">App Cold Start</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">60 FPS</div>
+        <div class="stats-label">UI Animation</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">99.9%</div>
+        <div class="stats-label">Uptime</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Mobile Performance</div>
+        </div>
+        <div class="telemetry">
+          <div class="telemetry-row">
+            <span class="telemetry-label">App Size</span>
+            <span class="telemetry-value">&lt;15 MB</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Memory Usage</span>
+            <span class="telemetry-value">&lt;50 MB</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">CPU Usage</span>
+            <span class="telemetry-value">&lt;20%</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Battery Impact</span>
+            <span class="telemetry-value">Minimal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Web Performance</div>
+        </div>
+        <div class="telemetry">
+          <div class="telemetry-row">
+            <span class="telemetry-label">First Contentful Paint</span>
+            <span class="telemetry-value">&lt;1.0s</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Time to Interactive</span>
+            <span class="telemetry-value">&lt;2.5s</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Total Blocking Time</span>
+            <span class="telemetry-value">&lt;200ms</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Cumulative Layout Shift</span>
+            <span class="telemetry-value">&lt;0.1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Optimization Techniques</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; color: var(--text-secondary);">
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 10px;">Mobile</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 8px;">✓ ProGuard/R8 code shrinking</li>
+            <li style="margin-bottom: 8px;">✓ Resource optimization</li>
+            <li style="margin-bottom: 8px;">✓ Lazy loading</li>
+            <li style="margin-bottom: 8px;">✓ Image compression</li>
+            <li style="margin-bottom: 8px;">✓ Database indexing</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 10px;">Web</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 8px;">✓ Code splitting</li>
+            <li style="margin-bottom: 8px;">✓ Tree shaking</li>
+            <li style="margin-bottom: 8px;">✓ Image optimization</li>
+            <li style="margin-bottom: 8px;">✓ Caching strategies</li>
+            <li style="margin-bottom: 8px;">✓ CDN integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
