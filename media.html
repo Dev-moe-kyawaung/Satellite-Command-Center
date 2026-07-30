@@ -22,4 +22,89 @@
       <a href="about.html" class="nav-link">About</a>
       <a href="skills.html" class="nav-link">Skills</a>
       <a href="experience.html" class="nav-link">Experience</a>
-     
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Press & Publications</h2>
+      <p class="section-subtitle">Media features, talks, and publications</p>
+    </section>
+
+    <div class="grid-2">
+      <div class="project-card">
+        <div class="project-icon">🎤</div>
+        <h3 class="project-title">Tech Conference Speaker</h3>
+        <p class="project-description">
+          Speaker at Android Developer Summit 2025, sharing insights on modern Android architecture and best practices.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">London, UK | March 2025</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📰</div>
+        <h3 class="project-title">Featured in Tech Blog</h3>
+        <p class="project-description">
+          Interviewed about mobile development trends and the future of cross-platform frameworks.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Dev.to | January 2025</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🎬</div>
+        <h3 class="project-title">YouTube Tutorial Series</h3>
+        <p class="project-description">
+          Created video tutorials on Android development with over 50K combined views.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">YouTube | 2024-Present</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📝</div>
+        <h3 class="project-title">Technical Articles</h3>
+        <p class="project-description">
+          Published articles on Medium and Dev.to about Kotlin, Jetpack Compose, and mobile app architecture.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Medium | 2023-Present</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
