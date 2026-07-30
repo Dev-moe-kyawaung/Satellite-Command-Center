@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaking | Events & Talks</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Events & Talks</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Events & Talks</h2>
+      <p class="section-subtitle">Conference appearances and speaking engagements</p>
+    </section>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">September 2025</div>
+        <h3 class="timeline-title">DroidCon London</h3>
+        <p class="timeline-description">
+          <strong>Topic:</strong> "Building Scalable Android Apps with Clean Architecture"<br><br>
+          Presented advanced architectural patterns for enterprise Android applications to 200+ developers.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">June 2025</div>
+        <h3 class="timeline-title">Mobile Dev Summit</h3>
+        <p class="timeline-description">
+          <strong>Topic:</strong> "Jetpack Compose: From Zero to Production"<br><br>
+          Live coding session demonstrating Compose implementation in real-world projects.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">March 2025</div>
+        <h3 class="timeline-title">Tech Meetup London</h3>
+        <p class="timeline-description">
+          <strong>Topic:</strong> "Kotlin Coroutines Deep Dive"<br><br>
+          Technical workshop on asynchronous programming with Kotlin coroutines and flows.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">November 2024</div>
+        <h3 class="timeline-title">University Guest Lecture</h3>
+        <p class="timeline-description">
+          <strong>Topic:</strong> "Career Path in Mobile Development"<br><br>
+          Guest lecture at Path University sharing industry insights and career guidance.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
