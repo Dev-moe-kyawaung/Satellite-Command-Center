@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mission Profile</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Mission Profile</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Mission Profile</h2>
+      <p class="section-subtitle">Personal data and operational background</p>
+    </section>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Personal Information</div>
+        </div>
+        <div class="telemetry">
+          <div class="telemetry-row">
+            <span class="telemetry-label">Name</span>
+            <span class="telemetry-value">Moe Kyaw</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Location</span>
+            <span class="telemetry-value">London, England</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Role</span>
+            <span class="telemetry-value">Senior Android Developer</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Experience</span>
+            <span class="telemetry-value">5+ Years</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">Education</span>
+            <span class="telemetry-value">CS, Path University</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Orbital Stats</div>
+        </div>
+        <div id="orbit-system" class="orbit-system"></div>
+      </div>
+    </div>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Mission Statement</div>
+      </div>
+      <p style="color: var(--text-secondary); line-height: 2; margin-bottom: 20px;">
+        I'm a passionate software engineer specializing in Android development and modern web technologies. 
+        With a strong foundation in computer science and years of hands-on experience, I build scalable, 
+        user-centric applications that solve real-world problems.
+      </p>
+      <p style="color: var(--text-secondary); line-height: 2;">
+        My expertise spans mobile app development with Kotlin and Jetpack Compose, frontend development 
+        with React and Next.js, and creating seamless user experiences through clean code and thoughtful design.
+      </p>
+    </section>
+
+    <section class="grid-4">
+      <div class="stats-card">
+        <div class="stats-value">50+</div>
+        <div class="stats-label">Projects Launched</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">100K+</div>
+        <div class="stats-label">Users Impacted</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">5+</div>
+        <div class="stats-label">Years Experience</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-value">20+</div>
+        <div class="stats-label">Technologies</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/orbit.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    new OrbitSystem('orbit-system');
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
