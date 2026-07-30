@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant | Mission Control</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Mission Control AI</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Mission Control AI</h2>
+      <p class="section-subtitle">Intelligent assistant for portfolio navigation</p>
+    </section>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">AI Operator Features</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 15px;">Guided Tours</h4>
+          <p style="color: var(--text-secondary); line-height: 1.8;">
+            The AI operator provides contextual guidance through different sections of the portfolio,
+            highlighting relevant projects and skills based on visitor interests.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 15px;">Smart Recommendations</h4>
+          <p style="color: var(--text-secondary); line-height: 1.8;">
+            Based on viewing patterns and interactions, the AI suggests relevant content and
+            projects that match visitor preferences and requirements.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 15px;">Real-time Assistance</h4>
+          <p style="color: var(--text-secondary); line-height: 1.8;">
+            Instant answers to questions about projects, technologies, and experience through
+            natural language interactions.
+          </p>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-cyan); margin-bottom: 15px;">Personalized Experience</h4>
+          <p style="color: var(--text-secondary); line-height: 1.8;">
+            Adapts the portfolio presentation based on visitor type (recruiter, client, collaborator)
+            for maximum relevance and impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">AI Commands</div>
+      </div>
+      <div style="display: grid; gap: 15px; color: var(--text-secondary);">
+        <div style="display: flex; justify-content: space-between; padding: 10px; background: rgba(0, 245, 255, 0.05); border-radius: 4px;">
+          <span>"Show me Android projects"</span>
+          <span style="color: var(--accent-cyan);">→ Filters Android development work</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 10px; background: rgba(0, 245, 255, 0.05); border-radius: 4px;">
+          <span>"What's your experience?"</span>
+          <span style="color: var(--accent-cyan);">→ Displays work history</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 10px; background: rgba(0, 245, 255, 0.05); border-radius: 4px;">
+          <span>"Tell me about your skills"</span>
+          <span style="color: var(--accent-cyan);">→ Shows technical capabilities</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 10px; background: rgba(0, 245, 255, 0.05); border-radius: 4px;">
+          <span>"How can I contact you?"</span>
+          <span style="color: var(--accent-cyan);">→ Opens contact information</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
