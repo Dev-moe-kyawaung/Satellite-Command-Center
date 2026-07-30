@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "FinTech Mobile App",
+      "category": "Android",
+      "description": "Secure banking application with biometric authentication",
+      "technologies": ["Kotlin", "MVVM", "Room", "Retrofit"],
+      "status": "Production",
+      "users": "100K+",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Platform",
+      "category": "Web",
+      "description": "Full-stack e-commerce solution with payment integration",
+      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      "status": "Production",
+      "users": "50K+",
+      "rating": 4.9
+    },
+    {
+      "id": 3,
+      "title": "Healthcare App",
+      "category": "Mobile",
+      "description": "Telemedicine platform with video consultations",
+      "technologies": ["Flutter", "Dart", "WebRTC", "AWS"],
+      "status": "Production",
+      "users": "10K+",
+      "rating": 4.7
+    }
+  ]
+}
