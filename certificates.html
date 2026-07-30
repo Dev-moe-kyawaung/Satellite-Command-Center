@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Qualifications</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">Qualifications</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Mission Control</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-indicator"></div>
+        <span>SYSTEMS ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2 class="section-title">Qualifications</h2>
+      <p class="section-subtitle">Certifications and professional credentials</p>
+    </section>
+
+    <div class="grid-3">
+      <div class="project-card">
+        <div class="project-icon">🎓</div>
+        <h3 class="project-title">Associate Android Developer</h3>
+        <p class="project-description">
+          Google Certification - Validated expertise in Android app development, UI/UX implementation, and data storage.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2022</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">☁️</div>
+        <h3 class="project-title">AWS Certified Developer</h3>
+        <p class="project-description">
+          Amazon Web Services - Proficiency in developing, deploying, and debugging cloud-based applications.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2023</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌐</div>
+        <h3 class="project-title">Meta Frontend Developer</h3>
+        <p class="project-description">
+          Meta Certification - Professional certificate in frontend development with React and modern web technologies.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2023</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔒</div>
+        <h3 class="project-title">Certified Secure Developer</h3>
+        <p class="project-description">
+          Security certification for building secure applications with focus on mobile and web security best practices.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2024</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📊</div>
+        <h3 class="project-title">Google Data Analytics</h3>
+        <p class="project-description">
+          Google Certificate - Data analysis, visualization, and interpretation skills for data-driven decision making.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2024</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🎯</div>
+        <h3 class="project-title">Agile Scrum Master</h3>
+        <p class="project-description">
+          Certified Scrum Master - Expertise in agile methodologies, sprint planning, and team facilitation.
+        </p>
+        <div style="color: var(--text-muted); font-size: 12px;">Issued: 2025</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Command Center</h4>
+        <p>Moe Kyaw's Satellite Command Center Portfolio</p>
+        <p>London, England, GB</p>
+      </div>
+      <div class="footer-section">
+        <h4>Communication</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-section">
+        <h4>System Status</h4>
+        <p>All systems operational</p>
+        <p>Last update: <span id="current-date"></span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Moe Kyaw | All Systems Nominal
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-operator.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
